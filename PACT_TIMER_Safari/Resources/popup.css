@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: system-ui;
+      padding: 10px;
+      min-width: 250px;
+    }
+    div {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h3>PACT Timer</h3>
+  <div id="results">Loading...</div>
+  <script src="popup.js"></script>
+</body>
+</html>
