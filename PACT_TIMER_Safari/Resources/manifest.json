@@ -35,5 +35,12 @@
       "16": "images/icon-48.png",
       "32": "images/icon-96.png"
     }
-  }
+  },
+  
+  "web_accessible_resources": [
+    {
+      "resources": ["pageInterceptor.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }

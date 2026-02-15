@@ -31,5 +31,22 @@ function installKeyInterceptor() {
   });
 }
 
+function injectPageScript() {
+  const script = document.createElement("script");
+  script.src = browser.runtime.getURL("pageInterceptor.js");
+  script.onload = () => script.remove();
+  document.documentElement.appendChild(script);
+}
+
 installKeyInterceptor();
+
+injectPageScript();
+
+
+
+
+
+
+
+
 
