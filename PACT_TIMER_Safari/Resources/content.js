@@ -27,6 +27,7 @@ function installKeyInterceptor() {
         submittedAt: performance.now(),
         promptText: text,
       };
+      window.postMessage({ type: "PACT_PROMPT_SUBMITTED" }, "*");
     }
   });
 }
